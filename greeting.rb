@@ -1,18 +1,13 @@
 
 def greeting
     
-    intro = ""
-   ARGV.each do |arg|
-        if arg == "Hey"
-            intro = arg
-        elsif arg == "Yo"
-            intro = arg
-        else
-            puts "#{intro} #{arg}"
-        end
-    
-   end
-   
+    array = [] 
+    ARGV.map.with_index do |arg, i|
+        array << arg
+    end
+   p "#{array[0]} #{array[1]}"
+   p "#{array[0]} #{array[2]}"
+   p "#{array[0]} #{array[3]}"
 end
 
 greeting
