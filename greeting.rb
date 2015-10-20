@@ -2,7 +2,7 @@
 def greeting
     
     array = [] 
-    ARGV.map.with_index do |arg, i|
+    ARGV.map.with_index do |arg|
         array << arg
     end
    p "#{array[0]} #{array[1]}"
